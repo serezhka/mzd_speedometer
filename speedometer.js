@@ -1,1 +1,0 @@
-/home/sergey/serezhka/jci/opera/opera_dir/userjs/speedometer.js
