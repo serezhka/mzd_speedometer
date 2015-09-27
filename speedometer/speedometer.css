@@ -1,0 +1,46 @@
+#btnDiv {
+	left:50%;
+	bottom:20px;
+	height:170px;
+	width:170px;
+	transform:translate(-50%, 0%);
+	z-index:20000;
+	position:absolute;
+	display:none;
+}
+
+#btnImg {
+	max-height:100%;
+	max-width:100%;
+}
+
+#fullscreenDiv {
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	height:100%;
+	width:100%;
+	z-index:20000;
+	position:absolute;
+	display: none;
+}
+
+#fullscreenDiv img {
+	height:100%;
+	width:100%;
+	display:block;
+	position:relative;
+	margin:0 auto;
+}
+
+#spdVal {
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+	position:absolute;
+	color:white;
+	font-family:'myfont',monospace;
+	font-size: 350px;
+}
+			
