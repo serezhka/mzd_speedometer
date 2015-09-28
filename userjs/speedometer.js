@@ -6,7 +6,6 @@
 // ==/UserScript==
 
 var speedValue = 0;
-var speedometerActive = false;
 
 function speedometer() {
 	$('head').prepend($('<link rel="stylesheet" type="text/css" />').attr('href', 'speedometer/speedometer.css'));
@@ -29,12 +28,10 @@ function speedometer() {
 	setInterval(function () {
 		if (framework.getCurrentApp() == 'system' && framework.getCurrCtxtId() == 'Applications') {
 			$('#btnDiv').fadeIn();
-			speedometerActive = true;
 			updateSpeed();
 		} else {
 			$('#btnDiv').fadeOut();
 			$('#fullscreenDiv').fadeOut();
-			speedometerActive = false;
 		}
 	}, 1000);
 }
