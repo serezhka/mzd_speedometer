@@ -34,6 +34,8 @@ function speedometer() {
 			$('#fullscreenDiv').fadeOut();
 		}
 	}, 1000);
+
+	Cufon.replace('#spdVal');
 }
 
 function updateSpeed() {
