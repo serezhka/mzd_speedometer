@@ -46,7 +46,7 @@ function updateSpeed() {
 			$('#spdVal').each(function () {
 				var $this = $(this);
 				$({Counter: $this.text()}).animate({Counter: speedValue}, {
-					duration: 2000,
+					duration: 950,
 					easing: 'linear',
 					step: function (now) {
 						$this.text(Math.ceil(now));
