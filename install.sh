@@ -10,7 +10,7 @@ sed -i 's|args="-u /jci/gui/index.html"|args="-u /jci/gui/index.html --noWatchdo
 sed -i 's/User JavaScript=0/User JavaScript=1/g' /jci/opera/opera_home/opera.ini
 count=$(grep -c "Allow File XMLHttpRequest=" /jci/opera/opera_home/opera.ini)
 if [ "$count" = "0" ]; then
-    sed -i '/User JavaScript=0/a Allow File XMLHttpRequest=1' /jci/opera/opera_home/opera.ini
+    sed -i '/User JavaScript=.*/a Allow File XMLHttpRequest=1' /jci/opera/opera_home/opera.ini
 else
     sed -i 's/Allow File XMLHttpRequest=.*/Allow File XMLHttpRequest=1/g' /jci/opera/opera_home/opera.ini
 fi
